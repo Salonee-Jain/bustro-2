@@ -9,7 +9,6 @@ clients = commands.Bot(command_prefix='.')
 async def on_ready():
   print("We are logged in as {0.user}".format(clients))
 
-
 @clients.command()
 async def kick(ctx, member: discord.Member,*, reason=None):
   await member.kick(reason=reason)
